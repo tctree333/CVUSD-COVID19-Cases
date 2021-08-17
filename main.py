@@ -12,11 +12,6 @@ FILENAME_DAILY = "data/daily.csv"
 
 
 def main():
-
-    if os.path.exists(FILENAME_HTML):
-        print("file already exists")
-        return
-
     print("downloading file")
     resp = requests.get(SOURCE_URL)
     if resp.status_code != 200:

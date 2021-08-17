@@ -3,8 +3,8 @@ name: Scrape data
 on:
   workflow_dispatch:
   schedule:
-    # run every day at 2:27 and 2:47 PM PDT (1 PM PST)
-    - cron: '27,47 21 * * *'
+    # run every 4 hours from 5:06 AM PDT (4 AM PST) to 9:06 PM PDT (8 PM PST)
+    - cron: '6 12,16,20,24,4 * * *'
 
 jobs:
   scrape:
