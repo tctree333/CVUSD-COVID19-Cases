@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # run every day at 2:27 and 2:47 PM PDT (1 PM PST)
-    - cron: '27, 47 21 * * *'
+    - cron: '27,47 21 * * *'
 
 jobs:
   scrape:
