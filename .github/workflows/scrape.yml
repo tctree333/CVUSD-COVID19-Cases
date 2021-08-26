@@ -17,6 +17,9 @@ jobs:
 
       - name: Fetch latest data
         run: python main.py
+        env:
+          LOGGER_DEPLOYMENT_ID: ${{ secrets.LOGGER_DEPLOYMENT_ID }}
+          LOGGER_SECRET: ${{ secrets.LOGGER_SECRET }}
 
       - name: Commit data
         run: |-
