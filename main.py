@@ -67,12 +67,11 @@ def main():
         sig=signature,
         time=timestamp,
     )
-    print(url)
-    # logger_resp = requests.get(url)
+    logger_resp = requests.get(url)
 
     print(
         "logged to spreadsheet"
-        if True  # logger_resp.status_code == 200
+        if logger_resp.status_code == 200
         else "error logging to spreadsheet"
     )
 
