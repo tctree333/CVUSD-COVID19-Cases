@@ -7,3 +7,7 @@ Raw HTML dumps from the embedded Google Spreadsheet are in the `data/html/` fold
 This GitHub Action runs every 4 hours from 5:06 AM PDT (4 AM PST) to 9:06 PM PDT (8 PM PST) Mon-Fri. I'm not sure how often the data updates, but the numbers changed while I was working on it, so I assume they will update throughout the day.
 
 School started on August 10th, but the first entry was from Aug. 15 (with data last updated from Aug. 11), so basically right from the beginning. It appears that I missed some updates on the day of Aug. 16 (as I was working on this), but we should have data from then on.
+
+This script also logs data to a Google Spreadsheet (through a custom Google Apps Script web API) for easier visualization and analysis. A published graph is below:
+
+![graph of total cases over time](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=426307024&format=image)
