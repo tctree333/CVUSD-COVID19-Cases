@@ -11,3 +11,4 @@ School started on August 10th, but the first entry was from Aug. 15 (with data l
 This script also logs data to a Google Spreadsheet (through a custom Google Apps Script web API) for easier visualization and analysis. A published graph is below:
 
 ![graph of total cases over time](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=426307024&format=image)
+![graph of daily case change](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=1445148168&format=image)
