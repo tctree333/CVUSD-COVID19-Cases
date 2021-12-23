@@ -3,6 +3,7 @@ import os
 import time
 from datetime import datetime, timedelta, timezone
 
+import lxml.html.clean
 import pandas
 import requests
 
@@ -17,6 +18,10 @@ FILENAME_HTML = PST_TIME.strftime("data/html/%Y-%m-%d.html")
 FILENAME_CSV = PST_TIME.strftime("data/csv/%Y-%m-%d.csv")
 FILENAME_DAILY = "data/daily.csv"
 
+cleaner = lxml.html.clean.Cleaner(
+    style=True, page_structure=False
+)
+
 
 def main():
     print("downloading file")
@@ -25,7 +30,7 @@ def main():
         print("error downloading file")
         return
 
-    html_content = resp.text
+    html_content = cleaner.clean_html(resp.text)
     with open(FILENAME_HTML, "w") as f:
         f.write(html_content)
     print("saved file")
