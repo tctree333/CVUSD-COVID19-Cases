@@ -15,5 +15,5 @@ This script also logs data to a Google Spreadsheet (through a custom Google Apps
 ![graph of estimated active cases](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=903770645&format=image)
 
 ![graph of total cases over time for the last 30 days](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=1034117209&format=image)
-![graph of daily case change for the last 30 days](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=1835162728&format=image)
-![graph of estimated active cases for the last 30 days](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=2114241936&format=image)
+![graph of daily case change for the last 30 days](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=2114241936&format=image)
+![graph of estimated active cases for the last 30 days](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsh8AKab1supcISGvs753qjOEbB0MBbVS3ipsQIVtK6vIvXjxgTJW8QRddVJqQJOmHZ_wW-5Jhikj/pubchart?oid=1835162728&format=image)
