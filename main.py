@@ -7,7 +7,7 @@ import lxml.html.clean
 import pandas
 import requests
 
-SOURCE_URL = "https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSJ-xfssimBAcxkv2-yf1tjW7klzc2grFfpR3HZnUaYxMmOi6V7YLSd8vUyOF3sD54CFhPkVbRD1Uz8/pubhtml/sheet?headers=false&gid=652332328"
+SOURCE_URL = "https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSJ-xfssimBAcxkv2-yf1tjW7klzc2grFfpR3HZnUaYxMmOi6V7YLSd8vUyOF3sD54CFhPkVbRD1Uz8/pubhtml/sheet?headers=false&gid=459487581"
 
 LOGGER_DEPLOYMENT_ID = os.environ.get("LOGGER_DEPLOYMENT_ID")
 LOGGER_SECRET = os.environ.get("LOGGER_SECRET")
@@ -18,9 +18,7 @@ FILENAME_HTML = PST_TIME.strftime("data/html/%Y-%m-%d.html")
 FILENAME_CSV = PST_TIME.strftime("data/csv/%Y-%m-%d.csv")
 FILENAME_DAILY = "data/daily.csv"
 
-cleaner = lxml.html.clean.Cleaner(
-    style=True, page_structure=False
-)
+cleaner = lxml.html.clean.Cleaner(style=True, page_structure=False)
 
 
 def main():
