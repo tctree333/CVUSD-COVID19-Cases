@@ -37,8 +37,8 @@ def main():
     print("saved file")
 
     print("converting to csv")
-    dfs = pandas.read_html(html_content, skiprows=(0,), index_col=0, header=(0, 1))
-    csv = dfs[0].to_csv(index=False)
+    df = pandas.read_html(html_content, index_col=0, header=(1, 2))[0]
+    csv = df.to_csv(index=False)
     with open(FILENAME_CSV, "w") as f:
         f.write(csv)
     with open(FILENAME_DAILY, "w") as f:
@@ -46,7 +46,7 @@ def main():
     print("saved csv")
 
     print("logging to spreadsheet")
-    df = pandas.read_html(html_content, skiprows=(0,), index_col=1, header=(0, 1))[0]
+    df = pandas.read_html(html_content, index_col=1, header=(1, 2))[0]
     current_month_year = PST_TIME.strftime("%B %Y")
     student_cases = df.get((current_month_year, "Students"))
     staff_cases = df.get((current_month_year, "Staff"))
