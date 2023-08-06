@@ -2,13 +2,13 @@ name: Scrape data
 
 on:
   workflow_dispatch:
-  schedule:
-    # run every 4 hours from 5:06 AM PDT (4 AM PST) to 9:06 PM PDT (8 PM PST) Mon-Fri
-    # we split the cron schedule into three ranges because timezones are weird
-    # (github actions runs in UTC, we want to run in pacificish time)
-    - cron: '6 12,16,20 * * 1' # 5:06 AM PDT to 1:06 PM PDT Mon
-    - cron: '6 0,4,12,16,20 * * 2-5' # 5:06 PM PDT to 1:06 PM PDT (the next day) Mon-Fri
-    - cron: '6 0,4 * * 6' # 5:06 PM PDT to 9:06 PM PDT Fri
+  # schedule:
+  #   # run every 4 hours from 5:06 AM PDT (4 AM PST) to 9:06 PM PDT (8 PM PST) Mon-Fri
+  #   # we split the cron schedule into three ranges because timezones are weird
+  #   # (github actions runs in UTC, we want to run in pacificish time)
+  #   - cron: '6 12,16,20 * * 1' # 5:06 AM PDT to 1:06 PM PDT Mon
+  #   - cron: '6 0,4,12,16,20 * * 2-5' # 5:06 PM PDT to 1:06 PM PDT (the next day) Mon-Fri
+  #   - cron: '6 0,4 * * 6' # 5:06 PM PDT to 9:06 PM PDT Fri
 
 jobs:
   scrape:
